@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: antiquewhite;">
+    <ul class="parent" >
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>C & C++</li>
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+//     const parent = document.querySelector('.parent')
+//     // console.log(parent);
+//    const mydiv = document.createElement('div')
+//    mydiv.id="Myid"
+//    mydiv.innerText="Hii Myself Vishal"
+//    mydiv.style.color="blue"
+//    mydiv.style.backgroundColor="yellow"
+//    document.body.appendChild(mydiv)
+
+//    function addNewLanguage (langName)
+//    {
+//     const li = document.createElement('li');
+//     li.appendChild(document.createTextNode('langName'));
+//     document.querySelector('body').appendChild(li);
+//    }
+
+  function addlang (langName){
+    const li = document.createElement('li')
+    li.innerText="GO"
+    document.body.querySelector('.parent').appendChild(li)
+  }
+
+ addlang(Coding)
+</script>
+
+</html>
