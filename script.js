@@ -1,9 +1,32 @@
-let arr=[2,3,0,2,12]
-let len= arr.at(2)
-console.log(len)
-let arr1=arr.pop()
-console.log(arr1)
-let arr2=arr.push(21)
-console.log(arr2)
-let arr3= arr.reverse()
-console.log(arr3)
+const buttons= document.querySelectorAll('.button')
+const body=document.querySelector('body')
+
+buttons.forEach(function(button){
+    addEventListener('click',function(event){
+        // console.log(event);
+      if (event.target.id==='red')
+      {
+        this.document.body.style.backgroundColor=event.target.id;
+      }
+      if (event.target.id==='green')
+        {
+          this.document.body.style.backgroundColor=event.target.id;
+        }
+        if (event.target.id==='blue')
+            {
+              this.document.body.style.backgroundColor=event.target.id;
+            }
+        if (event.target.id==='yellow')
+        {
+             this.document.body.style.backgroundColor=event.target.id;
+        }
+        if (event.target.id==='black')
+         {
+            this.document.body.style.backgroundColor=event.target.id;
+        }
+        if (event.target.id==='white')
+        {
+            this.document.body.style.backgroundColor=event.target.id;
+         }
+    })
+})
