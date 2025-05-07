@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Learning</title>
+
+</head>
+<body style="background-color: black;color: antiquewhite;" >
+    <div id="heading"><h2 >Amazing Images</h2></div>
+    
+    <div class="list">
+        <ul id="images">
+            <li><img id="space" src="p1.jpg" height="150" alt="space"></li>
+            <li><img id="landscape" src="p2.jpg" height="150" alt="landscape"></li>
+            <li><img id="arora" src="p3.jpg" height="150" alt="arora"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.querySelector('#images').addEventListener('click',function(e)
+    {
+        console.log(e);
+        
+        // const removeit = e.target.parentNode;
+        //     removeit.remove();
+      if (e.target.tagName==='IMG'){
+        const removeit = e.target.parentNode;
+        removeit.remove();
+      }
+    })
+
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
+
+    document.getElementById('space').addEventListener('click', function(e){
+        console.log("space clicked");
+        e.stopPropagation();
+       
+    }, false)
+</script>
+</html>
